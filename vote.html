@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated election system | Vote</title>
+    <!-- favicon -->
+    <link rel="icon" href="./Assets/images.png">
+    <!-- css style -->
+    <link rel="stylesheet" href="./CSS/Style.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+    <!-- header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href=""><img src="./Assets/logo.png" alt="" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-target="#navbarTogglerDemo02" data-bs-toggle="collapse"
+                aria-controls="navbarTogglerDemo02" aria-controls="">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link link" href="index.html">Home</a></li>
+
+                    <li class="nav-item"><a class="nav-link link" href="results.html">Results</a></li>
+
+                    <li class="nav-item"><a class="nav-link link" href="guidelines.html">Guidelines</a></li>
+
+                    <li class="nav-item"><a class="nav-link link" href="Contact.html">Contact</a></li>
+
+                    <li class="nav-item"><a class="nav-link link" href="#">Language</a></li>
+
+                    <li><a href="DashBoard.html" class="a"><button style="padding: 3px 5px; cursor: default;" class="btn_get_started bg-dark">00hr 00m 00s</button></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- voting section -->
+
+    <div class="container">
+        <div class="row w-0 mx-auto">
+            <h4 class="" style="font-family: Arial, Helvetica, sans-serif;"><strong>Choose or Search Party</strong></h4>
+
+            <div class="col-12 d-flex my-3">
+                <div>
+                    <input type="text" class="form-control" placeholder="Search party..." name="search">
+                </div>
+                <button class="btn btn-success">Search</button>
+            </div>
+
+            <section id="voting_section">
+                <div class="container-fluid p-0 w-60 ms-auto">
+                  <table class="table">
+                    <tbody>
+              
+                      <tr class=""></tr>
+                      <td class="px-5" style="background-color: rgb(230, 226, 235);">
+                        <img src="Assets/apc.png" alt="pdp" width="65" class="img-fluid">
+                        <label class="form-check-label label" for="radio">All Progressives Congress</label>
+                      <td style="background-color: rgb(230, 226, 235);"><input class="form-check-input custom-radio mx-5" type="radio"
+                          id="radio" name="party" value="1"></td>
+                      </td>
+                      </tr>
+              
+                      <tr class=""></tr>
+                      <td class="px-5" style="background-color: rgb(209, 202, 219);">
+                        <img src="Assets/labour_party.png" alt="pdp" width="65" class="img-fluid">
+                        <label class="form-check-label label" for="radio">Labour Party</label>
+                      <td style="background-color: rgb(209, 202, 219);"><input class="form-check-input custom-radio mx-5" type="radio"
+                          id="radio" name="party" value="1"></td>
+                      </td>
+                      </tr>
+              
+                      <tr class=""></tr>
+                      <td class="px-5" style="background-color: rgb(230, 226, 235);">
+                        <img src="Assets/pdp.png" alt="pdp" width="65" class="img-fluid">
+                        <label class="form-check-label label" for="radio">People Democratic Party</label>
+                      <td style="background-color: rgb(230, 226, 235);"><input class="form-check-input custom-radio mx-5" type="radio"
+                          id="radio" name="party" value="1"></td>
+                      </td>
+                      </tr>
+              
+                      <tr class=""></tr>
+                      <td class="px-5" style="background-color: rgb(209, 202, 219);">
+                        <img src="Assets/sdp.png" alt="pdp" width="65" class="img-fluid">
+                        <label class="form-check-label label" for="radio">Social Democratic Party</label>
+                      <td style="background-color: rgb(209, 202, 219);"><input class="form-check-input custom-radio mx-5" type="radio"
+                          id="radio" name="party" value="1"></td>
+                      </td>
+                      </tr>
+              
+                    </tbody>
+                  </table>
+                </section>
+
+            <div class="col-12 justify-content-around">
+                <button class="btn my-4  btn-success"  type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#voteModal">Proceed to Vote</button>
+            </div>
+
+            <!-- warning modal -->
+            <div class="modal fade" id="voteModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Confirm vote</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Please note that casted votes cannot be reversed. 
+                        <strong>Are you sure you want to continue?</strong>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Back</button>
+                    <button type="button" class="btn btn-success" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#votesuccessModal">Confrim vote</button>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+                        <!-- vote successful modal -->
+            <div class="modal fade modal-dialog modal-dialog-centered" id="votesuccessModal" tabindex="-1" data-bs-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <strong>You have successfuly casted your vote ✔</strong>
+                    </div>
+                    <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                        <a href="index.html" class="text-decoration-none text-white">Close</a>
+                    </button>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- bootstrap javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

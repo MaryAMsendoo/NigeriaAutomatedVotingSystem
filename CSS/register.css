@@ -1,0 +1,137 @@
+/* Registration section */
+.reg_inner_bg {
+    background-image: url("../Assets/istockphoto-1155281090-612x612.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .reg_outer_bg {
+    background-color: rgb(240, 245, 245, 0.733);
+    width: 100%;
+  }
+  /* form */
+  .form_container {
+    padding-top: 30px;
+  }
+  .form_box {
+    width: 38%;
+    margin: auto;
+    box-shadow: 0px 2px 2px 2px rgb(223, 225, 228);
+    border-radius: 8px 8px 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fff;
+    margin-bottom: 20px;
+  }
+  @media (max-width: 767px) {
+    .form_box {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 391px) {
+    .fname,
+    .mname,
+    .gender {
+      width: 100%;
+    }
+    .f2input,
+    .select,
+    .gender_box {
+      flex-direction: column;
+    }
+  }
+  
+  form {
+    padding: 12px;
+  }
+  .header_box {
+    border-bottom: 1px solid rgb(204, 208, 213);
+  }
+  
+  input{
+      outline: none;
+  }
+  
+  .form_box input,
+  select,
+  .gender {
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 20px;
+    border: 1px solid rgb(204, 208, 213);
+  }
+  .f2input,
+  .select,
+  .gender_box {
+    display: flex;
+    flex-direction: row;
+  }
+  .fname,
+  .mname,
+  .gender {
+    width: 50%;
+    display: block;
+  }
+  .fname,
+  .date,
+  .gender {
+    margin-right: 3px;
+  }
+  .mname,
+  .year {
+    margin-left: 3px;
+  }
+  .lname,
+  .nin,
+  .lga {
+    width: 100%;
+  }
+  label {
+    margin: 7px 0px;
+  }
+  .select select {
+    width: 33%;
+  }
+  .gender {
+    padding: 0px;
+    padding-left: 8px;
+  }
+  
+  .gender input {
+    margin-left: 20%;
+  }
+  /* removing the default select button in the input fied */
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    display: none;
+  }
+  
+  /* form button */
+  .btn_box {
+    width: 50%;
+    margin: auto;
+  }
+  .btn_box button {
+    width: 100%;
+    margin: 30px 0px 15px;
+    background-color: green;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    padding: 7px 0px;
+  }
+  .form_box p {
+    color: rgb(96, 103, 129);
+    font-size: 0.8rem;
+  }
+  .form_box h1,
+  .form_box p {
+    font-weight: bold;
+    text-align: center;
+  }
+  .form_box a {
+    text-decoration: none;
+  }
+  

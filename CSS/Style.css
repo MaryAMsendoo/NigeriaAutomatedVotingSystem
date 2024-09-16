@@ -1,0 +1,170 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-family: "poppins", sans-serif;
+}
+
+/* Header section */
+.navbar {
+  margin-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin: 1% 5% 3%;
+}
+.nav-link.link {
+  font-size: 1.2rem;
+  color: green;
+  cursor: pointer;
+  font-weight: 500;
+  margin: 2px 15px;
+}
+.nav-link:hover {
+  background-color: rgba(248, 249, 250, 0.555);
+  border-radius: 20px;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
+
+/* Main section */
+/* Title section */
+
+.inner_bg {
+  background-image: url("../Assets/logo.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.outer_bg {
+  background-color: rgba(199, 230, 198, 0.877);
+  width: 100%;
+  text-align: center;
+}
+.outer_bg h1 {
+  font-weight: 700;
+  line-height: 1.7;
+  padding: 5% 10% 2%;
+}
+
+.outer_bg a {
+  width: 50%;
+  margin: 0% auto;
+  display: block;
+}
+.btn_get_started {
+  margin-bottom: 10%;
+  padding: 10px 60px;
+  border: none;
+  background: green;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.btn_get_started:hover {
+  background-color: rgb(65, 185, 65);
+}
+
+/* Description section */
+#description_section {
+  padding: 6% 10% 0%;
+}
+.box img {
+  width: 100%;
+  height: 40%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.box h3 {
+  padding-top: 30px;
+  color: #111;
+}
+
+.paragrap p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+/* Feature section */
+#feature_section {
+  background: rgb(222, 238, 222);
+  padding: 2% 10%;
+}
+.feature_container {
+  padding: 4%;
+  text-align: center;
+}
+.feature_title {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: green;
+}
+.feature_container p {
+  line-height: 1.5;
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+
+.icon {
+  margin-bottom: 15px;
+  color: brown;
+}
+.icon:hover {
+  color: #bd5a67;
+}
+
+/* contact page */
+#feedback, #help_desk, #report_issue{
+  padding: 3% 15%;
+  text-align: justify;
+}
+
+#feedbacl p, #help_desk p, #report_issue p{
+  font-size: 1rem;
+  line-height: 1.7;
+  font-family: Arial, Helvetica, sans-serif;
+}
+/* guidelines section */
+
+#guidelines{
+  background: url(../Assets/istockphoto-962077642-612x612.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.outer{
+ padding: 0% 10%;
+ font-family: Arial, Helvetica, sans-serif;
+font-size: 1.3rem;
+background-color: rgba(199, 230, 198, 0.877);
+height: 100vh;
+text-align: justify;
+}
+
+/* voting */
+.custom-radio {
+  width: 20px !important;
+  height: 20px !important;
+  appearance: none !important;
+  border-radius: 50% !important;
+  border: 2px solid #007bff !important;
+  outline: none !important;
+  cursor: pointer !important;
+}
+
+.custom-radio:checked {
+  background-color: #007bff !important;
+}
+
+.label {
+  font-weight: bold !important;
+}
+
+
